@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive ESL Games</title>
+    <style>
+      :root {
+        --header-bg-color: rgb(34, 175, 240);
+        --accordion-bg-color: rgb(93, 241, 93);
+        --panel-bg-color: rgb(172, 216, 155);
+        --footer-bg-color: rgb(15, 7, 133); 
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      *::-webkit-scrollbar {
+        display: none;
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(5, 1, 56);
+      }
+
+      header {
+        background-color: var(--header-bg-color);
+        text-align: center;
+        padding: 5px;
+        border-bottom: 3px solid rgb(4, 132, 192);
+        box-shadow: 0 2px 5px rgb(5, 114, 165);
+        height: 5rem;
+        width: 100%;
+        position: fixed;
+        top: 0;
+      }
+      
+      header p {
+        font-size: 1.2rem;
+        color: white;
+      }
+
+      main {
+        height: 100vh;;
+        padding-top: 5rem;
+      }
+
+      .accordion {
+        background-color: var(--accordion-bg-color);
+        width: 99%;
+        display: block;
+        margin: 1rem auto 0 auto;
+        min-height: 5rem;
+        border: 2px solid white;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        color: rgb(4, 139, 201);
+        cursor: pointer;
+      }
+
+      .accordion:hover {
+        background-color: rgb(54, 194, 54)
+      }
+
+      .accordion.active {
+        border-radius: 0.5rem 0.5rem 0 0;;
+      }
+
+      .panel {
+        background-color: var(--panel-bg-color);
+        width: 98%;
+        margin: 0 0.5% 0 auto;
+        border-radius: 0 0 0.5rem 0.5rem;
+        border: 2px solid white;
+        display: none;
+      }
+
+      .panel.active {
+        border-top: none;
+        display: block;
+      }
+
+      .panel details {
+        padding: 1rem;
+        cursor: pointer;
+      }
+
+      .panel details p {
+        margin-left: 2rem;
+      }
+
+      footer {
+        background-color: var(--footer-bg-color);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        border-top: 2px solid white;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        font-style: italic;
+      }
+
+      @media (max-width: 600px) {
+        html {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Interactive ESL Games</h1>
+      <p>Engaging games to help students learn English more effectively.</p>
+    </header>
+
+    <main>
+      <button class="accordion">Oxford Phonics World Series</button>
+      <div class="panel">
+        <details>
+          <summary>Oxford Phonics 1</summary>
+            <p>Games will be ready soon.</p>
+        </details>
+
+        <hr>
+
+        <details>
+          <summary>Oxford Phonics 2</summary>
+            <p><a href="#">Short-a-a</a></p>
+            <p><a href="#">Short-a-am</a></p>
+            <p><a href="#">Short-a-an</a></p>
+        </details>
+      </div>
+
+      <button class="accordion">Footprints Series</button>
+      <div class="panel">
+        <details>
+          <summary>Footprints 1</summary>
+            <p><a href="#">Unit-1: My Birthday</a></p>
+        </details>
+      </div>
+
+    </main>
+
+    <footer>
+      <h3>Developed by: <a href="mailto:maisunlight01@gmail.com">Charlie Sparks</a></h3>
+    </footer>
+
+    <!-- The Javascript codes -->
+    <script>
+      // accordion functionality
+      const acc = document.querySelectorAll(".accordion");
+      acc.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const panel = btn.nextElementSibling;
+          btn.classList.toggle("active");
+          panel.classList.toggle("active");
+        })
+      })
+    </script>
+  </body>
+</html>
