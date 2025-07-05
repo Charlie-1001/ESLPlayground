@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive ESL Games</title>
     <style>
-      :root {
-        --header-bg-color: rgb(34, 175, 240);
-        --accordion-bg-color: rgb(93, 241, 93);
-        --panel-bg-color: rgb(172, 216, 155);
-        --footer-bg-color: rgb(15, 7, 133); 
-      }
-
       * {
         margin: 0;
         padding: 0;
@@ -21,13 +14,14 @@
       *::-webkit-scrollbar {
         display: none;
       }
+      
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: rgb(5, 1, 56);
       }
 
       header {
-        background-color: var(--header-bg-color);
+        background-color: rgb(34, 175, 240);
         text-align: center;
         padding: 5px;
         border-bottom: 3px solid rgb(4, 132, 192);
@@ -49,7 +43,7 @@
       }
 
       .accordion {
-        background-color: var(--accordion-bg-color);
+        background-color: rgb(93, 241, 93);
         width: 99%;
         display: block;
         margin: 1rem auto 0 auto;
@@ -70,7 +64,7 @@
       }
 
       .panel {
-        background-color: var(--panel-bg-color);
+        background-color: rgb(172, 216, 155);
         width: 98%;
         margin: 0 0.5% 0 auto;
         border-radius: 0 0 0.5rem 0.5rem;
@@ -88,12 +82,16 @@
         cursor: pointer;
       }
 
+      .panel details:hover {
+        background-color: rgb(158, 194, 144);
+      }
+
       .panel details p {
         margin-left: 2rem;
       }
 
       footer {
-        background-color: var(--footer-bg-color);
+        background-color: rgb(15, 7, 133);
         color: white;
         text-align: center;
         padding: 1rem;
