@@ -43,7 +43,7 @@
       }
 
       main {
-        height: 100vh;
+        min-height: 100vh;
         padding-top: 5rem;
       }
 
@@ -91,8 +91,16 @@
         background-color: rgb(158, 194, 144);
       }
 
-      .panel details p {
+      .panel p {
         margin-left: 2rem;
+      }
+
+      .panel p:hover {
+        background-color: rgb(192, 221, 180);
+      }
+
+      .activity-container {
+        padding: 1rem;
       }
 
       footer {
@@ -160,11 +168,17 @@
       <div class="panel">
         <details>
           <summary>Footprints 1</summary>
-            <p><a href="https://charlie-1001.github.io/git-footprints-1/u-1-vocab-game.html">Unit-1: My Birthday</a></p>
-            <p><a href="https://charlie-1001.github.io/git-footprints-1/u-2-vocab-game.html">Unit-2: My Classroom</a></p>
+            <p><a href="https://charlie-1001.github.io/git-footprints-1/u-1-vocab-game.html" target="_blank">Unit-1: My Birthday</a></p>
+            <p><a href="https://charlie-1001.github.io/git-footprints-1/u-2-vocab-game.html" target="_blank">Unit-2: My Classroom</a></p>
         </details>
       </div>
 
+      <button class="accordion">Grading Activities</button>
+      <div class="panel">
+        <div class="activity-container">
+          <p><a href="#">My Collection</a></p>
+        </div>
+      </div>
     </main>
 
     <footer>
