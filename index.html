@@ -83,12 +83,16 @@
       }
 
       .panel details {
-        padding: 1rem;
+        padding: 0.5rem;
         cursor: pointer;
       }
 
       .panel details:hover {
         background-color: rgb(158, 194, 144);
+      }
+
+      .panel details details:hover {
+        background-color: rgb(123, 190, 96);
       }
 
       .panel p {
@@ -97,6 +101,10 @@
 
       .panel p:hover {
         background-color: rgb(192, 221, 180);
+      }
+
+      .panel a {
+        text-decoration: none;
       }
 
       .activity-container {
@@ -168,8 +176,22 @@
       <div class="panel">
         <details>
           <summary>Footprints 1</summary>
-            <p><a href="https://charlie-1001.github.io/git-footprints-1-vocab/u-1-vocab-game.html" target="_blank">Unit-1: My Birthday</a></p>
-            <p><a href="https://charlie-1001.github.io/git-footprints-1-vocab/u-2-vocab-game.html" target="_blank">Unit-2: My Classroom</a></p>
+            <details class="sub-detail">
+              <summary>Vocabulary</summary>
+                <p><a href="https://charlie-1001.github.io/git-footprints-1-vocab/u-1-vocab-game.html" target="_blank">Unit-1: My Birthday</a></p>
+                <p><a href="https://charlie-1001.github.io/git-footprints-1-vocab/u-2-vocab-game.html" target="_blank">Unit-2: My Classroom</a></p>
+            </details>
+
+            <details class="sub-detail">
+              <summary>Structures</summary>
+                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-1.html" target="_blank">Unit-1: Here's a _______ for you. Thank You.</a></p>
+                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-2.html" target="_blank">Unit-1: How old are you? I'm ________.</a></p>
+                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-3.html" target="_blank">Unit-1: Are you _______? Yes, I am./ No, I'm not.</a></p>
+                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-1.html" target="_blank">Unit-2: What's this? It's ________.</a></p>
+                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-2.html" target="_blank">Unit-2: Can I have the ________, please? Here you are.</a></p>
+                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-3.html" target="_blank">Unit-2: This/ My is __________.</a></p>
+            </details>
+
         </details>
       </div>
 
