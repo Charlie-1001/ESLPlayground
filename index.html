@@ -1,247 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESLPlayground</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      *::-webkit-scrollbar {
-        display: none;
-      }
-      
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: rgb(5, 1, 56);
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESLPlayground</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-      header {
-        background-color: rgb(34, 175, 240);
-        text-align: center;
-        border-bottom: 3px solid rgb(4, 132, 192);
-        box-shadow: 0 2px 5px rgb(5, 114, 165);
-        height: 5rem;
-        position: fixed;
-        width: 100%;
-        top: 0;
-      }
-      
-      header h1 {
-        font-size: 2.5rem;
-        color: rgb(7, 7, 168);
-      }
-
-      header p {
-        font-size: 1.2rem;
-        color: white;
-        line-height: 1;
-      }
-
-      main {
-        min-height: 100vh;
-        padding-top: 5rem;
-      }
-
-      .accordion {
-        background-color: rgb(93, 241, 93);
-        width: 99%;
-        display: block;
-        margin: 1rem auto 0 auto;
-        min-height: 5rem;
-        border: 2px solid white;
-        border-radius: 0.5rem;
-        font-size: 1.5rem;
-        color: rgb(4, 139, 201);
-        cursor: pointer;
-      }
-
-      .accordion:hover {
-        background-color: rgb(54, 194, 54)
-      }
-
-      .accordion.active {
-        border-radius: 0.5rem 0.5rem 0 0;;
-      }
-
-      .panel {
-        background-color: rgb(172, 216, 155);
-        width: 98%;
-        margin: 0 0.5% 0 auto;
-        border-radius: 0 0 0.5rem 0.5rem;
-        border: 2px solid white;
-        display: none;
-      }
-
-      .panel.active {
-        border-top: none;
-        display: block;
-      }
-
-      .panel details {
-        padding: 0.5rem;
-        cursor: pointer;
-      }
-
-      .panel details:hover {
-        background-color: rgb(158, 194, 144);
-      }
-
-      .panel details details:hover {
-        background-color: rgb(123, 190, 96);
-      }
-
-      .panel p {
-        margin-left: 2rem;
-      }
-
-      .panel p:hover {
-        background-color: rgb(192, 221, 180);
-      }
-
-      .panel a {
-        text-decoration: none;
-      }
-
-      .activity-container {
-        padding: 1rem;
-      }
-
-      footer {
-        background-color: rgb(15, 7, 133);
-        color: white;
-        text-align: center;
-        padding: 1rem;
-        border-top: 2px solid white;
-      }
-
-      footer a {
-        color: white;
-        text-decoration: none;
-        font-style: italic;
-      }
-
-      @media (max-width: 600px) {
-        html {
-          font-size: 12px;
-        }
-      }
-
-      @media (max-width: 410px) {
-        html {
-          font-size: 8px;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <header>
-      <h1>ESLPlayground</h1>
-      <p>A fun and interactive space to practice and improve your English skills.</p>
+<body>
+  <main>
+    <!-- The header section -->
+    <header class="page-header">
+      <div class="logo">
+        <img src="page-logo.png" alt="ESLPlayground Logo">
+        <h1>ESLPlayground</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#miniGames">Mini Games</a>
+        <a href="#about">About</a>
+      </nav>
     </header>
 
-    <main>
-      <button class="accordion">Oxford Phonics World Series</button>
-      <div class="panel">
-        <details>
-          <summary>Oxford Phonics 1</summary>
-            <p>Games will be ready soon.</p>
+    <!-- The Home section -->
+    <section id="home" class="section-container">
+      <h2 class="section-title">Welcome to ESLPlayground</h2>
+      <h3 class="section-subtitle">Start exploring by selecting the categories below.</h3>
+      <div class="category" id="category"></div>
+    </section>
+    <hr>
+
+    <!-- The Phonics section -->
+    <section id="phonics" class="section-container">
+      <h2 class="section-title">Oxford Phonics World</h2>
+      <h3 class="section-subtitle">Explore the world of phonics with engaging activities.</h3>
+      <details class="details-1">
+        <summary>Oxford Phonics World 1</summary>
+        <h3 class="section-subtitle">Games are coming soon!</h3>
+      </details>
+      <details class="details-1">
+        <summary>Oxford Phonics World 2</summary>
+        <h3 class="section-subtitle">Test your phonics skills with fun activities!</h3>
+        <div class="game-container" id="phonicsGameContainer"></div>
+      </details>
+    </section>
+    <hr>
+
+    <!-- The Footprint section -->
+    <section id="footprint" class="section-container">
+      <h2 class="section-title">Footprints</h2>
+      <h3 class="section-subtitle">Explore the world of footprints with engaging activities.</h3>
+      <details class="details-1">
+        <summary>Footprints 1</summary>
+        <details class="details-2">
+          <summary>Vocabulary Games</summary>
+          <div class="game-container" id="footprint1VocabGameContainer"></div>
         </details>
-
-        <hr>
-
-        <details>
-          <summary>Oxford Phonics 2</summary>
-            <!-- The spelling game -->
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-the-sound.html" target="_blank">Spell from the Sound</a></p>
-            <!-- Unit-1 -->
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-a.html" target="_blank">Unit-1: Short-a-a</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-am.html" target="_blank">Unit-1: Short-a-am</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-an.html" target="_blank">Unit-1: Short-a-an</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-a-am-an.html" target="_blank">Unit-1: Short-a-a-am-an</a></p>
-            <!-- Unit-2 -->
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-ad-ag.html" target="_blank">Unit-2: Short-a-ad-ag</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-ap.html" target="_blank">Unit-2: Short-a-ap</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-at.html" target="_blank">Unit-2: Short-a-at</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-ad-ag-ap-at.html" target="_blank">Unit-2: Short-a-ad-ag-ap-at</a></p>
-            <!-- Unit-3 -->
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-e-e.html" target="_blank">Unit-3: Short-e-e</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-e-et.html" target="_blank">Unit-3: Short-e-et</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-e-en-ed.html" target="_blank">Unit-3: Short-e-en-ed</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-e-e-et-en-ed.html" target="_blank">Unit-3: Short-e-e-et-en-ed</a></p>
-            <!-- Unit-4 -->
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-i-i.html" target="_blank">Unit-4: Short-i-i</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-i-ip.html" target="_blank">Unit-4: Short-i-ip</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-i-ib-id.html" target="_blank">Unit-4: Short-i-ib-id</a></p>
-            <p><a href="https://charlie-1001.github.io/git-oxford-phonics-world-2/short-i-ip-ib-id.html" target="_blank">Unit-4: Short-i-ip-ib-id</a></p>
+        <details class="details-2">
+          <summary>Grammar Games</summary>
+          <div class="game-container" id="footprint1GrammarGameContainer"></div>
+          </summary>
         </details>
-      </div>
+    </section>
+    <hr>
 
-      <button class="accordion">Footprints Series</button>
-      <div class="panel">
-        <details>
-          <summary>Footprints 1</summary>
-            <details class="sub-detail">
-              <summary>Vocabulary</summary>
-                <p><a href="https://charlie-1001.github.io/git-footprints-1-vocab/u-1-vocab-game.html" target="_blank">Unit-1: My Birthday</a></p>
-                <p><a href="https://charlie-1001.github.io/git-footprints-1-vocab/u-2-vocab-game.html" target="_blank">Unit-2: My Classroom</a></p>
-                <p><a href="https://charlie-1001.github.io/git-footprints-1-vocab/u-3-vocab-game.html" target="_blank">Unit-3: My Body</a></p>
-            </details>
+    <!-- The Grading Activities section -->
+    <section id="gradingActivities" class="section-container">
+      <h2 class="section-title">Grading Activities</h2>
+      <h3 class="section-subtitle">Engage in activities to enhance your learning experience.</h3>
+      <div class="category" id="gradingGameContainer"></div>
+    </section>
+    <hr>
 
-            <details class="sub-detail">
-              <summary>Structures</summary>
-                <!-- Unit-1 -->
-                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-1.html" target="_blank">Unit-1: Here's a _______ for you. Thank You.</a></p>
-                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-2.html" target="_blank">Unit-1: How old are you? I'm ________.</a></p>
-                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-3.html" target="_blank">Unit-1: Are you _______? Yes, I am./ No, I'm not.</a></p>
-                <!-- Unit-2 -->
-                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-1.html" target="_blank">Unit-2: What's this? It's ________.</a></p>
-                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-2.html" target="_blank">Unit-2: Can I have the ________, please? Here you are.</a></p>
-                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-3.html" target="_blank">Unit-2: This/ My is __________.</a></p>
-                <!-- Unit-3 -->
-                <p><a href="https://charlie-1001.github.io/git-footprints-1-structures/structure-u3-1.html" target="_blank">Unit-3: This is/ These are my _______.</a></p>
-            </details>
+    <!-- The Mini Games section -->
+    <section id="miniGames" class="section-container">
+      <h2 class="section-title">Mini Games</h2>
+      <h3 class="section-subtitle">Enjoy a variety of fun mini-games!</h3>
+      <div class="category" id="miniGameContainer"></div>
+    </section>
+    <hr>
 
-        </details>
-      </div>
+    <!-- The About section -->
+    <section id="about" class="section-container">
+      <h2 class="section-title">About ESLPlayground</h2>
+      <p>
+        ESLPlayground is an interactive learning space designed to make English language learning fun, engaging, and
+        effective.
+        Created as a teaching aid, it brings together a variety of tools and activities that help students practice
+        lessons in a
+        playful and meaningful way.
+      </p>
+      <p>
+        Here, students can explore interactive games, quizzes, and mini learning challenges that reinforce vocabulary,
+        grammar,
+        and communication skills. Teachers can also access grading tools and activity trackers to monitor student
+        progress with
+        ease.
+      </p>
+      <p>
+        From lively chatbots that encourage conversation practice to quick quiz games that test understanding,
+        ESLPlayground
+        turns every lesson into an enjoyable adventure. It’s more than just a website—it’s a virtual playground where
+        learning
+        English feels natural, exciting, and rewarding.
+      </p>
+      <p>
+        Whether you’re a student eager to learn or a teacher looking for creative teaching aids, ESLPlayground is your
+        go-to
+        space for interactive English learning.
+      </p>
+    </section>
+  </main>
 
-      <button class="accordion">Grading Activities</button>
-      <div class="panel">
-        <div class="activity-container">
-          <p><a href="https://charlie-1001.github.io/git-grading-activities/my-collection.html" target="_blank">My Collection</a></p>
-        </div>
-      </div>
+  <!-- The footer section -->
+  <footer class="page-footer">
+    <p>&copy; 2025 ESLPlayground. All rights reserved.</p>
+  </footer>
 
-      <!-- Mini games -->
-      <button class="accordion">Mini Games</button>
-      <div class="panel">
-        <div class="activity-container">
-          <p><a href="https://charlie-1001.github.io/git-mini-games/nps-bot/index.html" target="_blank">NPS Genius</a></p>
-        </div>
-      </div>
-    </main>
+  <script src="script.js"></script>
+</body>
 
-    <footer>
-      <h3>Developed by: <a href="mailto:maisunlight01@gmail.com">Charlie Sparks</a></h3>
-      <p>Images on this site are used solely for educational purposes. All rights belong to their respective owners.</p>
-    </footer>
-
-    <!-- The Javascript codes -->
-    <script>
-      // accordion functionality
-      const acc = document.querySelectorAll(".accordion");
-      acc.forEach(btn => {
-        btn.addEventListener("click", () => {
-          const panel = btn.nextElementSibling;
-          btn.classList.toggle("active");
-          panel.classList.toggle("active");
-        })
-      })
-    </script>
-  </body>
 </html>
