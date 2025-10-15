@@ -62,9 +62,9 @@
 
     const miniGames = [
       { name: "NPS Genius", image: "images/nps-genius.png", link: "https://charlie-1001.github.io/git-mini-games/nps-bot/index.html" },
-      { name: "Quiz Game (Lower Level)", image: "images/nps-genius.png", link: "https://charlie-1001.github.io/git-mini-games/quizGames/lowerLevel.html" },
-      { name: "Quiz Game (Higher Level)", image: "images/nps-genius.png", link: "https://charlie-1001.github.io/git-mini-games/quizGames/higherLevel.html" },
-      { name: "QR Code Hunt", image: "images/nps-genius.png", link: "https://charlie-1001.github.io/git-mini-games/qrCodeHunt/index.html" },
+      { name: "Quiz Game (Lower Level)", image: "images/lower-quiz.png", link: "https://charlie-1001.github.io/git-mini-games/quizGames/lowerLevel.html" },
+      { name: "Quiz Game (Higher Level)", image: "images/higher-quiz.png", link: "https://charlie-1001.github.io/git-mini-games/quizGames/higherLevel.html" },
+      { name: "QR Code Hunt", image: "images/qrCodeHunt.png", link: "https://charlie-1001.github.io/git-mini-games/qrCodeHunt/index.html" },
     ];
 
     const categoryContainer = document.getElementById("category");
