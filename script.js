@@ -57,7 +57,7 @@
     ];
 
     const gradingGames = [
-      { name: "My Collection", image: "images/grading-activities.png", link: "https://charlie-1001.github.io/git-grading-activities/my-collection.html" },
+      { name: "My Collection", image: "images/my-collection.png", link: "https://charlie-1001.github.io/git-grading-activities/my-collection.html" },
     ];
 
     const miniGames = [
