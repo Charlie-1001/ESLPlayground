@@ -61,7 +61,10 @@
     ];
 
     const miniGames = [
-      { name: "NPS Genius", image: "images/mini-games.png", link: "https://charlie-1001.github.io/git-mini-games/nps-bot/index.html" },
+      { name: "NPS Genius", image: "images/nps-genius.png", link: "https://charlie-1001.github.io/git-mini-games/nps-bot/index.html" },
+      { name: "Quiz Game (Lower Level)", image: "images/nps-genius.png", link: "https://charlie-1001.github.io/git-mini-games/quizGames/lowerLevel.html" },
+      { name: "Quiz Game (Higher Level)", image: "images/nps-genius.png", link: "https://charlie-1001.github.io/git-mini-games/quizGames/higherLevel.html" },
+      { name: "QR Code Hunt", image: "images/nps-genius.png", link: "https://charlie-1001.github.io/git-mini-games/qrCodeHunt/index.html" },
     ];
 
     const categoryContainer = document.getElementById("category");
@@ -92,7 +95,7 @@
       const gameDiv = document.createElement("div");
       gameDiv.className = "game-item";
       gameDiv.innerHTML = `
-        <a href="${game.link}"><h4>${game.name}</h4></a>
+        <a href="${game.link}" target="_blank"><h4>${game.name}</h4></a>
       `;
       phonicsGameContainer.appendChild(gameDiv);
     });
@@ -102,7 +105,7 @@
       const gameDiv = document.createElement("div");
       gameDiv.className = "game-item";
       gameDiv.innerHTML = `
-        <a href="${game.link}"><h4>${game.name}</h4></a>
+        <a href="${game.link}" target="_blank"><h4>${game.name}</h4></a>
       `;
       footprintVocabGameContainer.appendChild(gameDiv);
     });
@@ -122,7 +125,7 @@
       const gameDiv = document.createElement("div");
       gameDiv.className = "category-item";
       gameDiv.innerHTML = `
-        <a href="${game.link}">
+        <a href="${game.link}" target="_blank">
           <img src="${game.image}" alt="${game.name}">
           <h3>${game.name}</h3>
         </a>
@@ -135,10 +138,11 @@
       const gameDiv = document.createElement("div");
       gameDiv.className = "category-item";
       gameDiv.innerHTML = `
-        <a href="${game.link}">
+        <a href="${game.link}" target="_blank">
           <img src="${game.image}" alt="${game.name}">
           <h3>${game.name}</h3>
         </a>
       `;
       miniGameContainer.appendChild(gameDiv);
     });
+    
