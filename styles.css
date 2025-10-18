@@ -196,11 +196,10 @@ details {
 
 /* The footer */
 .page-footer {
-  height: 4rem;
+  height: fit-content;
   background-color: rgb(0, 0, 0);
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-top: 1px solid white;
+  text-align: center;
+  padding: 1rem;
 }
