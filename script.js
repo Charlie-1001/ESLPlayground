@@ -10,28 +10,28 @@
       { name: "Spell from the Sound", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-the-sound.html" },
 
       // Unit-1
-      { name: "Unit-1: Short-a-a", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-a.html" },
-      { name: "Unit-1: Short-a-am", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-am.html" },
-      { name: "Unit-1: Short-a-an", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-an.html" },
-      { name: "Unit-1: Short-a-a-am-an", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-a-am-an.html" },
+      { name: "Unit-1: Short-a-a-am-an", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-1.html" },
 
       // Unit-2
-      { name: "Unit-2: Short-a-ad-ag", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-ad-ag.html" },
-      { name: "Unit-2: Short-a-ap", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-ap.html" },
-      { name: "Unit-2: Short-a-at", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-at.html" },
-      { name: "Unit-2: Short-a-ad-ag-ap-at", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-a-ad-ag-ap-at.html" },
+      { name: "Unit-2: Short-a-ad-ag-ap-at", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-2.html" },
 
       // Unit-3
-      { name: "Unit-3: Short-e-e", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-e-e.html" },
-      { name: "Unit-3: Short-e-et", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-e-et.html" },
-      { name: "Unit-3: Short-e-en-ed", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-e-en-ed.html" },
-      { name: "Unit-3: Short-e-e-et-en-ed", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-e-e-et-en-ed.html" },
+      { name: "Unit-3: Short-e-e-et-en-ed", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-3.html" },
 
       // Unit-4
-      { name: "Unit-4: Short-i-i", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-i-i.html" },
-      { name: "Unit-4: Short-i-ip", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-i-ip.html" },
-      { name: "Unit-4: Short-i-ib-id", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-i-ib-id.html" },
-      { name: "Unit-4: Short-i-ip-ib-id", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/short-i-ip-ib-id.html" }
+      { name: "Unit-4: Short-i-ip-ib-id", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-4.html" }, 
+
+      // Unit-5
+      { name: "Unit-5: Short-i-in-ig-it-ix", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-5.html" },
+
+      // Unit-6
+      { name: "Unit-6: Short-o-ot-op", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-6.html" },
+
+      // Unit-7
+      { name: "Unit-7: Short-u-ug-ud-up", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-7.html" },
+
+      // Unit-8
+      { name: "Unit-8: Short-u-ut-ub-um-un", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-8.html" },
     ];
 
     const footprintVocabGames = [
