@@ -7,24 +7,24 @@
 
     const phonicsSoundSpelling = [
       // Spelling from Sounds
-      { name: "Spelling Bee", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spelling-bee.html" },
-      { name: "Unit-1: Short-a-a-am-an", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-1.html" },
-      { name: "Unit-2: Short-a-ad-ag-ap-at", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-2.html" },
-      { name: "Unit-3: Short-e-e-et-en-ed", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-3.html" },
-      { name: "Unit-4: Short-i-ip-ib-id", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-4.html" }, 
-      { name: "Unit-5: Short-i-in-ig-it-ix", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-5.html" },
-      { name: "Unit-6: Short-o-ot-op", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-6.html" },
-      { name: "Unit-7: Short-u-ug-ud-up", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-7.html" },
-      { name: "Unit-8: Short-u-ut-ub-um-un", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-8.html" },
+      { name: "Spelling Bee", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-sounds/spelling-bee.html" },
+      { name: "Unit-1: Short-a-a-am-an", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-sounds/unit-1.html" },
+      { name: "Unit-2: Short-a-ad-ag-ap-at", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-sounds/unit-2.html" },
+      { name: "Unit-3: Short-e-e-et-en-ed", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-sounds/unit-3.html" },
+      { name: "Unit-4: Short-i-ip-ib-id", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-sounds/unit-4.html" }, 
+      { name: "Unit-5: Short-i-in-ig-it-ix", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-sounds/unit-5.html" },
+      { name: "Unit-6: Short-o-ot-op", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-sounds/unit-6.html" },
+      { name: "Unit-7: Short-u-ug-ud-up", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-sounds/unit-7.html" },
+      { name: "Unit-8: Short-u-ut-ub-um-un", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-sounds/unit-8.html" },
     ];
 
     const phonicsPictureSpelling = [
       // Spelling from Pictures
-      { name: "Unit-1: Short-a-a-am-an", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-1-pictures.html" },  
-      { name: "Unit-2: Short-a-ad-ag-ap-at", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-2-pictures.html" },
-      { name: "Unit-3: Short-e-e-et-en-ed", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-3-pictures.html" },
-      { name: "Unit-4: Short-i-ip-ib-id", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-4-pictures.html" }, 
-      { name: "Unit-5: Short-i-in-ig-it-ix", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-5-pictures.html" },
+      { name: "Unit-1: Short-a-a-am-an", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-pictures/unit-1-pictures.html" },  
+      { name: "Unit-2: Short-a-ad-ag-ap-at", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-pictures/unit-2-pictures.html" },
+      { name: "Unit-3: Short-e-e-et-en-ed", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-pictures/unit-3-pictures.html" },
+      { name: "Unit-4: Short-i-ip-ib-id", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-pictures/unit-4-pictures.html" }, 
+      { name: "Unit-5: Short-i-in-ig-it-ix", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-pictures/unit-5-pictures.html" },
     ];
 
     const footprintVocabGames = [
