@@ -5,33 +5,26 @@
       { name: "Mini Games", image: "images/mini-games.png", link: "#miniGames" },
     ];
 
-    const phonics2Games = [
-      // Spell from the Sound
-      { name: "Spell from the Sound", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-the-sound.html" },
-
-      // Unit-1
+    const phonicsSoundSpelling = [
+      // Spelling from Sounds
+      { name: "Spelling Bee", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spelling-bee.html" },
       { name: "Unit-1: Short-a-a-am-an", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-1.html" },
-
-      // Unit-2
       { name: "Unit-2: Short-a-ad-ag-ap-at", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-2.html" },
-
-      // Unit-3
       { name: "Unit-3: Short-e-e-et-en-ed", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-3.html" },
-
-      // Unit-4
       { name: "Unit-4: Short-i-ip-ib-id", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-4.html" }, 
-
-      // Unit-5
       { name: "Unit-5: Short-i-in-ig-it-ix", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-5.html" },
-
-      // Unit-6
       { name: "Unit-6: Short-o-ot-op", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-6.html" },
-
-      // Unit-7
       { name: "Unit-7: Short-u-ug-ud-up", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-7.html" },
-
-      // Unit-8
       { name: "Unit-8: Short-u-ut-ub-um-un", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-8.html" },
+    ];
+
+    const phonicsPictureSpelling = [
+      // Spelling from Pictures
+      { name: "Unit-1: Short-a-a-am-an", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-1-pictures.html" },  
+      { name: "Unit-2: Short-a-ad-ag-ap-at", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-2-pictures.html" },
+      { name: "Unit-3: Short-e-e-et-en-ed", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-3-pictures.html" },
+      { name: "Unit-4: Short-i-ip-ib-id", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-4-pictures.html" }, 
+      { name: "Unit-5: Short-i-in-ig-it-ix", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/unit-5-pictures.html" },
     ];
 
     const footprintVocabGames = [
@@ -68,7 +61,8 @@
     ];
 
     const categoryContainer = document.getElementById("category");
-    const phonicsGameContainer = document.getElementById("phonicsGameContainer");
+    const phonicsSpellFromSounds = document.getElementById("phonicsSpellFromSounds");
+    const phonicsSpellFromPictures = document.getElementById("phonicsSpellFromPictures");
     const footprintVocabGameContainer = document.getElementById("footprint1VocabGameContainer");
     const footprintGrammarGameContainer = document.getElementById("footprint1GrammarGameContainer");
     const gradingGameContainer = document.getElementById("gradingGameContainer");
@@ -91,13 +85,22 @@
     });
 
     // Dynamically add phonics games to the container
-    phonics2Games.forEach(game => {
+    phonicsSoundSpelling.forEach(game => {
       const gameDiv = document.createElement("div");
       gameDiv.className = "game-item";
       gameDiv.innerHTML = `
         <a href="${game.link}" target="_blank"><h4>${game.name}</h4></a>
       `;
-      phonicsGameContainer.appendChild(gameDiv);
+      phonicsSpellFromSounds.appendChild(gameDiv);
+    });
+
+    phonicsPictureSpelling.forEach(game => {
+      const gameDiv = document.createElement("div");
+      gameDiv.className = "game-item";
+      gameDiv.innerHTML = `
+        <a href="${game.link}" target="_blank"><h4>${game.name}</h4></a>
+      `;
+      phonicsSpellFromPictures.appendChild(gameDiv);
     });
 
     // Dynamically add footprint vocab games to the container
