@@ -5,6 +5,10 @@
       { name: "Mini Games", image: "images/mini-games.png", link: "#miniGames" },
     ];
 
+    const phonicsFlashcards = [
+      {name: "My Flashcards", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/phonics-flashcards/index.html"}
+    ]
+
     const phonicsSoundSpelling = [
       // Spelling from Sounds
       { name: "Spelling Bee", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-sounds/spelling-bee.html" },
@@ -27,6 +31,10 @@
       { name: "Unit-5: Short-i-in-ig-it-ix", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-pictures/unit-5-pictures.html" },
     ];
 
+    const footprintFlashcards = [
+      {name: "My Flashcards", link: "https://charlie-1001.github.io/git-footprints-1-vocab/footprints-flashcards/index.html"},
+    ]
+
     const footprintVocabGames = [
       { name: "Unit 1 (My Birthday)", link: "https://charlie-1001.github.io/git-footprints-1-vocab/u-1-vocab-game.html" },
       { name: "Unit 2 (My Classroom)", link: "https://charlie-1001.github.io/git-footprints-1-vocab/u-2-vocab-game.html" },
@@ -36,17 +44,17 @@
 
     const footprintGrammarGames = [
       // Unit-1
-      { name: "Unit-1: Here's a _______ for you. Thank You.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-1.html" },
-      { name: "Unit-1: How old are you? I'm ________.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-2.html" },
-      { name: "Unit-1: Are you _______? Yes, I am./ No, I'm not.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-3.html" },
+      { name: "Unit-1: Here's a ... for you. Thank You.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-1.html" },
+      { name: "Unit-1: How old are you? I'm ....", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-2.html" },
+      { name: "Unit-1: Are you ...? Yes, I am./ No, I'm not.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u1-3.html" },
 
       // Unit-2
-      { name: "Unit-2: What's this? It's ________.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-1.html" },
-      { name: "Unit-2: Can I have the ________, please? Here you are.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-2.html" },
-      { name: "Unit-2: This/ My is __________.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-3.html" },
+      { name: "Unit-2: What's this? It's ....", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-1.html" },
+      { name: "Unit-2: Can I have the ..., please? Here you are.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-2.html" },
+      { name: "Unit-2: This/ My is ....", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-3.html" },
 
       // Unit-3
-      { name: "Unit-3: This is/ These are my _______.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u3-1.html" }
+      { name: "Unit-3: This is/ These are my ....", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u3-1.html" }
     ];
 
     const gradingGames = [
@@ -67,6 +75,8 @@
     const footprintGrammarGameContainer = document.getElementById("footprint1GrammarGameContainer");
     const gradingGameContainer = document.getElementById("gradingGameContainer");
     const miniGameContainer = document.getElementById("miniGameContainer");
+    const phonicsFlashcardContainer = document.getElementById("phonicsFlashcard");
+    const footprintFlashcardContainer = document.getElementById("footprint1FlashcardContainer");
 
     // auto open the details element
     document.querySelectorAll("details").forEach(detail => detail.open = true);
@@ -83,6 +93,16 @@
       `;
       categoryContainer.appendChild(catDiv);
     });
+
+    // Dynamically add phonics flashcards to the container
+    phonicsFlashcards.forEach(game => {
+      const gameDiv = document.createElement("div");
+      gameDiv.className = "game-item";
+      gameDiv.innerHTML = `
+        <a href="${game.link}" target="_blank"><h4>${game.name}</h4></a>
+      `;
+      phonicsFlashcardContainer.appendChild(gameDiv);
+    })
 
     // Dynamically add phonics games to the container
     phonicsSoundSpelling.forEach(game => {
@@ -102,6 +122,16 @@
       `;
       phonicsSpellFromPictures.appendChild(gameDiv);
     });
+
+    // Dynamically add footprint flashcards to the container
+    footprintFlashcards.forEach(game => {
+      const gameDiv = document.createElement("div");
+      gameDiv.className = "game-item";
+      gameDiv.innerHTML = `
+        <a href="${game.link}" target="_blank"><h4>${game.name}</h4></a>
+      `;
+      footprintFlashcardContainer.appendChild(gameDiv);
+    })
 
     // Dynamically add footprint vocab games to the container
     footprintVocabGames.forEach(game => {
