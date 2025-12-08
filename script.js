@@ -54,7 +54,15 @@
       { name: "Unit-2: This/ My is ....", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u2-3.html" },
 
       // Unit-3
-      { name: "Unit-3: This is/ These are my ....", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u3-1.html" }
+      { name: "Unit-3: This is/ These are my ....", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u3-1.html" },
+
+      // Unit-4
+      { name: "Unit-4: I've got (a) ....", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u4-1.html" },
+      { name: "Unit-4: Is this/ Are these your ....?", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u4-2.html" },
+      { name: "Unit-4: Is this/ Are these your ....?", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u4-2.html" },
+      { name: "Unit-5: I like/ I don't like ....", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u5-1.html" },
+      { name: "Unit-5: Do you like ...?/ Yes, I do./ No, I don't.", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u5-2.html" },
+      { name: "Unit-5: Is/Are ... good for you?", link: "https://charlie-1001.github.io/git-footprints-1-structures/structure-u5-3.html" },
     ];
 
     const gradingGames = [
