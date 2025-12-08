@@ -29,6 +29,7 @@
       { name: "Unit-3: Short-e-e-et-en-ed", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-pictures/unit-3-pictures.html" },
       { name: "Unit-4: Short-i-ip-ib-id", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-pictures/unit-4-pictures.html" }, 
       { name: "Unit-5: Short-i-in-ig-it-ix", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-pictures/unit-5-pictures.html" },
+      { name: "Unit-6: Short-o-ot-op", link: "https://charlie-1001.github.io/git-oxford-phonics-world-2/spell-from-pictures/unit-6-pictures.html" },
     ];
 
     const footprintFlashcards = [
@@ -40,6 +41,8 @@
       { name: "Unit 2 (My Classroom)", link: "https://charlie-1001.github.io/git-footprints-1-vocab/u-2-vocab-game.html" },
       { name: "Unit 3 (My Body)", link: "https://charlie-1001.github.io/git-footprints-1-vocab/u-3-vocab-game.html" },
       { name: "Unit 4 (My Clothes)", link: "https://charlie-1001.github.io/git-footprints-1-vocab/u-4-vocab-game.html" },
+      { name: "Unit 5 (Food I like)", link: "https://charlie-1001.github.io/git-footprints-1-vocab/u-5-vocab-game.html" },
+      { name: "Unit 6 (My toys)", link: "https://charlie-1001.github.io/git-footprints-1-vocab/u-6-vocab-game.html" },
     ];
 
     const footprintGrammarGames = [
